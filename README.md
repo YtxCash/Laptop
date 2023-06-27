@@ -11,11 +11,11 @@
 
 ## Manjaro
 
-### 启动盘
+### Boot
 
-硬件：dell G3，ssd + ssd；uefi + GPT
+dell G3，ssd + ssd；uefi + GPT
 
-刻录：ventoy + [manjaro && win11]
+[Ventoy](https://github.com/ventoy/Ventoy) + [Manjaro](https://manjaro.org) + [Win11](https://www.microsoft.com/software-download/windows11)
 
 ```shell
 sudo pacman-mirrors -i -c China -m rank
@@ -37,24 +37,6 @@ yay -S google-chrome visual-studio-code-bin
 yay -S rustup prettier unzip codespell
 yay -S v2raya-bin v2ray
 yay -S fcitx5 fcitx5-qt fcitx5-configtool fcitx5-rime fcitx5-gtk
-```
-
-#### V2Ray
-
-基于 Nginx 的 vmess+ws+tls 一键安装脚本
-
-注册域名(一年 10 几元)：
-
-<https://www.namesilo.com>
-
-域名解析(free)：
-
-<https://www.cloudflare.com>
-
-```shell
-wget -N --no-check-certificate -q -O install.sh "https://raw.githubusercontent.com/wulabing/V2Ray_ws-tls_bash_onekey/master/install.sh"
-chmod +x install.sh
-bash install.sh
 ```
 
 #### Rime
@@ -85,7 +67,6 @@ alias unins="yay -Rns"
 alias up="yay -Syyu"
 alias clean="yay -Rns $(pacman -Qdtq)"
 alias szsh="source ~/.zshrc"
-alias uppsql="systemctl start postgresql"
 ```
 
 #### GnuCash
